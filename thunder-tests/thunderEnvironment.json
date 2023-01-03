@@ -1,0 +1,20 @@
+[
+  {
+    "_id": "46369e81-641e-467a-91eb-70795572be46",
+    "name": ".env",
+    "default": true,
+    "sortNum": 10000,
+    "created": "2023-01-01T23:35:04.140Z",
+    "modified": "2023-01-01T23:35:04.140Z",
+    "data": [
+      {
+        "name": "base_url",
+        "value": "http://localhost:3000"
+      },
+      {
+        "name": "token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZpbmljaXVzIiwic3ViIjoiYjAyZmM5YWQtYjJjZS00NzBkLWIzZWMtZmJhNzRkNTM0YmVkIiwiaWF0IjoxNjcyNzU2NjQ1LCJleHAiOjE2NzMzNjE0NDV9.a_lFfRN8Fz2waWpIapGn-9Gx-LzKQxc-G5VXB_sRZSQ"
+      }
+    ]
+  }
+]

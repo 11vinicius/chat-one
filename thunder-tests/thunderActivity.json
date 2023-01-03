@@ -1,0 +1,40 @@
+[
+  {
+    "_id": "a380a791-dad7-47a6-848d-45121bbe0bc5",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{base_url}}/user/email",
+    "url": "{{base_url}}/user/email",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-01-02T12:28:21.779Z",
+    "modified": "2023-01-02T12:28:58.427Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"email\":\"viniciuscesarlemes@gmail.com\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "9b79170a-3d93-4c3c-a29c-d44b9940f12e",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{base_url}}/user/email",
+    "url": "{{base_url}}/user/email",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-01-02T12:30:37.666Z",
+    "modified": "2023-01-02T12:30:37.666Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"email\":\"viniciuscesarlemes@gmail.com\"\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]

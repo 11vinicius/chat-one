@@ -42,7 +42,18 @@ export class UserService {
     return `This action updates a #${id} user`;
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} user`;
+  remove(id: string) {
+    const deletePosts = this.prisma.post.deleteMany({
+      where: {
+        userId: id
+      }
+    })
+
+    const deleteUser = this.prisma.user.delete({
+      where: {
+        id: id
+      }
+    })
+    return this.prisma.$transaction([deletePosts, deleteUser]);
   }
 }

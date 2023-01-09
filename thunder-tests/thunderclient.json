@@ -59,13 +59,145 @@
     "method": "POST",
     "sortNum": 10000,
     "created": "2023-01-02T12:38:12.898Z",
-    "modified": "2023-01-03T15:14:04.409Z",
+    "modified": "2023-01-09T15:20:37.809Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"email\":\"viniciuscesarlemes@gmail.com\",\n  \"password\":\"123456\"\n}",
+      "raw": "{\n \"password\":\"123456\",\n  \"email\":\"viniciuscesarlemes@gmil.com\"\n}",
       "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "c5c7ea96-5c72-4937-b1bf-e04f48698829",
+    "colId": "3cc23e52-23ce-4a00-8755-5c3fbae855aa",
+    "containerId": "",
+    "name": "createPost",
+    "url": "{{base_url}}/post",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-01-03T16:02:44.640Z",
+    "modified": "2023-01-08T19:37:27.207Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\":\"323\",\n  \"content\":\"323\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "7b2d842c-224a-49c0-a40a-128b8b7c3e85",
+    "colId": "3cc23e52-23ce-4a00-8755-5c3fbae855aa",
+    "containerId": "",
+    "name": "getPostByUserId",
+    "url": "{{base_url}}/post/postByUser",
+    "method": "GET",
+    "sortNum": 30000,
+    "created": "2023-01-08T19:01:32.326Z",
+    "modified": "2023-01-08T19:37:09.008Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "9e83a00c-6822-4bb5-ae26-f1e14e0130df",
+    "colId": "3cc23e52-23ce-4a00-8755-5c3fbae855aa",
+    "containerId": "",
+    "name": "updatePostByUserId",
+    "url": "{{base_url}}/post/e4178c95-a9c7-4665-a1a8-1d1dd58c5b1",
+    "method": "PATCH",
+    "sortNum": 40000,
+    "created": "2023-01-08T19:52:33.636Z",
+    "modified": "2023-01-09T13:39:50.880Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\":\"vinicius\",\n  \"content\":\"cesar\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "e3c510bc-d837-48a6-98ec-cec0573a43f8",
+    "colId": "3cc23e52-23ce-4a00-8755-5c3fbae855aa",
+    "containerId": "",
+    "name": "postAll",
+    "url": "{{base_url}}/post",
+    "method": "GET",
+    "sortNum": 50000,
+    "created": "2023-01-09T13:59:13.330Z",
+    "modified": "2023-01-09T14:02:43.804Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "692ab4e1-abb8-4566-8195-fe56b5fdfafb",
+    "colId": "3cc23e52-23ce-4a00-8755-5c3fbae855aa",
+    "containerId": "",
+    "name": "getPostById",
+    "url": "{{base_url}}/post/218b1742-ee58-486c-b731-aef69d4c7190",
+    "method": "GET",
+    "sortNum": 60000,
+    "created": "2023-01-09T14:04:00.006Z",
+    "modified": "2023-01-09T15:23:16.333Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "95c4909a-d280-42a7-8c2a-4ff8811d1a2f",
+    "colId": "5bd9c588-076c-42d6-8ca8-368705bbf2e6",
+    "containerId": "",
+    "name": "deleteUserAndPost",
+    "url": "{{base_url}}/user/5eb48b5f-02bb-4383-9eba-e7dd5d5c3f93",
+    "method": "DELETE",
+    "sortNum": 70000,
+    "created": "2023-01-09T15:08:49.415Z",
+    "modified": "2023-01-09T15:09:28.168Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "f42f7223-fe2f-4b13-baf5-1c5e815a712d",
+    "colId": "3cc23e52-23ce-4a00-8755-5c3fbae855aa",
+    "containerId": "",
+    "name": "deletePost",
+    "url": "{{base_url}}/post/218b1742-ee58-486c-b731-aef69d4c7190",
+    "method": "DELETE",
+    "sortNum": 70000,
+    "created": "2023-01-09T16:59:32.196Z",
+    "modified": "2023-01-09T17:00:46.130Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
     },
     "tests": []
   }

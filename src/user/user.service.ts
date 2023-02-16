@@ -43,17 +43,17 @@ export class UserService {
   }
 
   remove(id: string) {
-    const deletePosts = this.prisma.post.deleteMany({
-      where: {
-        userId: id
-      }
-    })
+    // const deletePosts = this.prisma.post.deleteMany({
+    //   where: {
+    //     userId: id
+    //   }
+    // })
 
     const deleteUser = this.prisma.user.delete({
       where: {
         id: id
       }
     })
-    return this.prisma.$transaction([deletePosts, deleteUser]);
+    return this.prisma.$transaction([deleteUser]);
   }
 }

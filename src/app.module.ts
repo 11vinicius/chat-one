@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { UserModule } from './user/user.module';
 import { AuthModule } from './auth/auth.module';
-import { PostModule } from './post/post.module';
+import { MessageModule } from './message/message.module';
 
 @Module({
-  imports: [UserModule, AuthModule, PostModule],
+  imports: [UserModule, AuthModule, MessageModule],
   controllers: [],
   providers: [],
 })

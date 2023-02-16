@@ -13,6 +13,8 @@ async function bootstrap() {
     })
   );
   useContainer(app.select(AppModule), { fallbackOnErrors: true })
+  app.enableCors();
+
   await app.listen(3000);
 }
 bootstrap();
